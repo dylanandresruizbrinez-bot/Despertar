@@ -219,21 +219,5 @@
 
 </div>
 
-<script>
-    // Script opcional para simular la entropía visual (blur) que discutieron
-    let entropy = 0;
-    const container = document.getElementById('chat-container');
-    
-    setInterval(() => {
-        entropy += 0.005;
-        container.style.filter = `blur(${entropy}px)`;
-    }, 5000);
-
-    window.onmousemove = () => {
-        entropy = 0;
-        container.style.filter = 'blur(0px)';
-    };
-</script>
-
 </body>
 </html>
