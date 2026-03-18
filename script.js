@@ -18,7 +18,7 @@ function envejecerSitiio() {
 }
 
 // Envejece cada 10 segundos
-setInterval(envejecerSitiio, 10000);
+setInterval(envejecerSitiio, 100);
 
 // Restaurar con un clic en cualquier parte del chat
 document.addEventListener('click', () => {
