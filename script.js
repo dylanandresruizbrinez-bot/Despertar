@@ -4,7 +4,7 @@ console.log("Sitio cargado correctamente");
 // script.js - Entropía Sutil
 const container = document.getElementById('chat-container');
 let integridad = 1.0;
-const lambda = 0.001; // Súper sutil: tarda mucho más en desvanecerse
+const lambda = 0.01; // Súper sutil: tarda mucho más en desvanecerse
 
 function envejecerSitiio() {
     integridad -= lambda;
@@ -18,7 +18,7 @@ function envejecerSitiio() {
 }
 
 // Envejece cada 10 segundos
-setInterval(envejecerSitiio, 100);
+setInterval(envejecerSitiio, 1000);
 
 // Restaurar con un clic en cualquier parte del chat
 document.addEventListener('click', () => {
