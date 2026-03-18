@@ -5,6 +5,7 @@ console.log("Sitio cargado correctamente");
 const container = document.getElementById('chat-container');
 let integridad = 1.0;
 const lambda = 0.01; // Súper sutil: tarda mucho más en desvanecerse
+setInterval(envejecerSitiio, 1000);
 
 function envejecerSitiio() {
     integridad -= lambda;
@@ -17,8 +18,6 @@ function envejecerSitiio() {
     container.style.filter = `blur(${blurAmount}px)`;
 }
 
-// Envejece cada 10 segundos
-setInterval(envejecerSitiio, 1000);
 
 // Restaurar con un clic en cualquier parte del chat
 document.addEventListener('click', () => {
